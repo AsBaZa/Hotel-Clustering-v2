@@ -4,7 +4,7 @@ This is a project of <a href="http://en.eustat.eus/indice.html">Eustat</a> with 
 
 120 requests have been done per each day and each hotel/pension. In other words, the price of the next 120 days has been collected daily and the unit of analysis has been the standard double room with bathroom, without breakfast and without VAT. Once the 120 requests were done, we took the median of those prices for the posterior analysis.
 
-These README.md is divided in many sections:
+These README.md is divided in few sections:
  - [App description](#app-description)
  - [Clustering methodology](#clustering-methodology)
  - [Libraries](#libraries)
