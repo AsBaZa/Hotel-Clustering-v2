@@ -147,5 +147,3 @@ The libraries used in this app are mainly [Plotly](https://plot.ly/javascript/) 
 <p align="center">
  <img src="images/plotly_leaflet.png">
 </p>
-
-Apart from that, the plugin [Leaflet.Shapefile](https://github.com/calvinmetcalf/leaflet.shapefile) has been also used to load and add the Basque Country shapefile to the map.
