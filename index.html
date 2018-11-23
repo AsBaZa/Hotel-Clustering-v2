@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Title and Logo -->
+    <title>Hotel - Clustering</title>
+    <!-- CSS files -->
+      <!-- Leaflet -->
+      <link rel="stylesheet" type="text/css" href="Leaflet/leaflet.css">
+      <!-- Local -->
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  </head>
+
+  <body id="container">
+    <header>
+      <div class="topTitle">
+        <div id="topTitleText">
+          <h2 class="titulosH2Global">Clustering</h2>
+        </div>
+        <div class="language">
+          <span class=""><b>Language</b></span>
+          <br>
+          <select class="language-select" id="input_language">
+            <option value="en" selected>English</option>
+            <option value="eu">Euskera</option>
+            <option value="es">Castellano</option>
+          </select>
+        </div>
+      </div>
+      <div class="clustertext box">
+        This is a beta version app of time-series clustering, for further
+        information you can click on the next button.
+        <a href="https://github.com/AsBaZa/asbaza.github.io">
+          <img src="images/info.png"
+          class="info_button" alt="info button" title="Further information">
+        </a>
+      </div>
+    </header>
+
+    <nav>
+      <div class="nav_select">
+        <span class="title" data-tr="Cluster"></span>
+        <br>
+        <select class="upper-select" id="input_cluster">
+          <option value="denak" data-tr="All" selected></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </div>
+      <div class="nav_select">
+        <span class="title" data-tr="Category"></span>
+        <br>
+        <select class="upper-select" id="input_category">
+          <option value="denak" data-tr="All" selected></option>
+          <option value="P1">P1</option>
+          <option value="P2">P2</option>
+          <option value="H1">&#9734;</option>
+          <option value="H2">&#9734;&#9734;</option>
+          <option value="H3">&#9734;&#9734;&#9734;</option>
+          <option value="H4">&#9734;&#9734;&#9734;&#9734;</option>
+          <option value="H5">&#9734;&#9734;&#9734;&#9734;&#9734;</option>
+        </select>
+      </div>
+      <div class="nav_select">
+        <span class="title" data-tr="Province"></span>
+        <br>
+        <select class="upper-select" id="input_province">
+          <option value="denak" data-tr="All" selected></option>
+          <option value="Araba" data-tr="Araba"></option>
+          <option value="Bizkaia" data-tr="Bizkaia"></option>
+          <option value="Gipuzkoa" data-tr="Gipuzkoa"></option>
+        </select>
+      </div>
+      <div class="nav_select">
+        <span class="title" data-tr="Stratum"></span>
+        <br>
+        <select class="upper-select" id="input_stratum">
+          <option value="denak" data-tr="All" selected></option>
+          <option value="Resto Alava">Resto Alava</option>
+          <option value="Rioja Alavesa">Rioja Alavesa</option>
+          <option value="Vitoria-Gasteiz">Vitoria-Gasteiz</option>
+          <option value="Bizkaia interior">Bizkaia interior</option>
+          <option value="Bizkaia costa">Bizkaia costa</option>
+          <option value="Area Metropolitana de Bilbao">Area Metropolitana de Bilbao</option>
+          <option value="Bilbao">Bilbao</option>
+          <option value="Gipuzkoa interior">Gipuzkoa interior</option>
+          <option value="Gipuzkoa costa">Gipuzkoa costa</option>
+          <option value="Area Metropolitana de Donostia-San Sebastián">Area Metropolitana de Donostia-San Sebastián</option>
+          <option value="Donostia-San Sebastián">Donostia-San Sebastián</option>
+        </select>
+      </div>
+    </nav>
+
+    <main>
+      <section>
+        <div class="clusterdiv box">
+          <span class="title" data-tr="Clustering with Hotel/Pension price time-series"></span>
+          <div>
+            <div id="clusterplot"></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="title" data-tr="Clustering Type"></div>
+          <div class="radiodiv">
+            <div class="radio radio_button">
+              <input type="Radio" name="clustering_type" value="CLUSTERABS" checked>
+              <span data-tr="Absolute Price"></span>
+            </div>
+            <div class="radio radio_button">
+              <input type="Radio" name="clustering_type" value="CLUSTERNOR">
+              <span data-tr="Normalized Price"></span>
+            </div>
+            <div class="radio radio_button">
+              <input type="Radio" name="clustering_type" value="CLUSTERVOL">
+              <span data-tr="Volatility"></span>
+            </div>
+            <div class="nav_select clustering_type_select">
+              <select id="clustering_type_selector">
+                <option value="CLUSTERABS" selected data-tr="Absolute Price"></option>
+                <option value="CLUSTERNOR" data-tr="Normalized Price"></option>
+                <option value="CLUSTERVOL" data-tr="Volatility"></option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="clustertext2 box">
+          <div class="title" data-tr="Clustering Information"></div>
+          <div id="info-box">
+            <div>
+              <span data-tr="Clustering type selected:"></span>
+              <b id="type_text" data-tr="Absolute Price"></b>
+            </div>
+            <div>
+              <span data-tr="Cluster selected:"></span>
+              <b id="select_text" data-tr="All"></b>
+            </div>
+
+            <div id="text_description" data-tr="ClusterText"></div>
+          </div>
+        </div>
+
+      </section>
+      <aside>
+        <div class="categorydiv box aside-box">
+          <span class="title" data-tr="Hotel Distribution by Category"></span>
+          <div>
+            <div id="categoryplot"></div>
+          </div>
+        </div>
+
+        <div id="stratum1" class="box categorydiv aside-box">
+          <span class="title" data-tr="Hotel Distribution by Stratum"></span>
+          <div id="stratum">
+            <div id="heatmap" class="heatmap title"></div>
+            <div class="stratumplot">
+              <div id="stratumplot"></div>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+    </main>
+
+
+
+    <!-- Leaflet -->
+    <script src="Leaflet/leaflet.js"></script>
+
+
+    <!-- Plotly -->
+    <script src="https://cdn.plot.ly/plotly-basic-latest.min.js"></script>
+      <!-- Basque language for time-series -->
+      <script src="js/language/plotly-basque.js"></script>
+      <!-- Spanish language for time-series -->
+      <script src="js/language/plotly-spanish.js"></script>
+      <!-- English language for time-series -->
+      <!-- <script src="js/language/plotly-english.js"></script> -->
+
+    <!-- Local Files -->
+      <!-- Data -->
+      <script src="js/data/dfABS.js"></script>
+      <script src="js/data/dfNOR.js"></script>
+      <script src="js/data/dfALD.js"></script>
+      <script src="js/data/honESTCLUS.js"></script>
+      <!-- Languages -->
+      <script src="js/language/multilenguaje.js"></script>
+      <!-- Shapefile -->
+      <script src="shapefile/basque_est.js"></script>
+
+    <!-- Main JavaScript Code -->
+    <script src="js/class.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

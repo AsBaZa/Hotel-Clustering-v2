@@ -1,0 +1,117 @@
+@media screen and (max-width: 1024px) {
+  section{
+    width: 100%;
+  }
+
+  aside{
+    width: 100%;
+  }
+
+  .categorydiv{
+    width: 340px;
+    height: 300px;
+  }
+
+  #stratumplot, #categoryplot{
+    height: 280px;
+  }
+
+  #stratum{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #heatmap{
+    height: 283px;
+    width: 337px;
+  }
+
+  .categorydiv{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #stratum1{
+    width: 700px;
+  }
+
+  .stratumplot{
+    width: 337px;
+  }
+
+  #info-box{
+    min-height: 0px;
+  }
+}
+
+
+@media screen and (max-width: 740px) {
+  #stratum1{
+    display: block;
+    width:340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .categorydiv, #heatmap{
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .clustering_type_select{
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #clustering_type_selector{
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .radio_button{
+    display: none;
+    width: 0px;
+  }
+
+  .radio_text{
+    padding-right: 65px;
+    text-align: left;
+    padding-top: 3px;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+  nav{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav_select{
+    width: 46%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .radiodiv{
+    flex-wrap: wrap;
+  }
+
+  .radio_text{
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+
+  .clustering_type_select{
+    width: 100%;
+  }
+
+  #clustering_type_selector{
+    margin: auto;
+  }
+}

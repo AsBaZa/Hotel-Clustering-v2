@@ -1,0 +1,314 @@
+*{
+  font-family: 'Open Sans', sans-serif!important;
+  letter-spacing: -0.04em!important;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+header, div {
+  box-sizing: border-box;
+}
+
+.title{
+  color: #8A0829;
+  font-weight: bold;
+  text-align: left;
+}
+
+.titulosH2Global {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px none Red;
+    text-align: left;
+    color: #013161;
+    font-weight: bold;
+    font-size: 3.4rem;
+}
+
+.topTitle{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#topTitleText{
+  width: calc(100% - 135px);
+  min-width: 270px;
+}
+
+.language{
+  width: 125px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+
+header {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*
+ *
+ * Nav
+ *
+ */
+
+nav{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 65px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.nav_select{
+  width: 25%;
+  margin: auto 10px auto 10px;
+}
+
+select{
+  width: 120px;
+}
+
+/*
+ *
+ * Main
+ *
+ */
+
+main{
+  margin-left: auto;
+  margin-right: auto;
+  display:flex;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.box{
+  margin: 0px 10px 0px 10px;
+}
+
+
+
+/*
+ *
+ * Section
+ *
+ */
+
+section{
+  width: calc(100% - 335px);
+}
+
+    /*
+     *
+     * Section-clusterplot
+     *
+     */
+
+    .clusterdiv{
+      min-width: 610px;
+      text-align: left;
+    }
+
+    #clusterplot{
+      height: 450px;
+      font-weight: normal;
+    }
+
+    .border{
+      border: solid 1px gray;
+      padding: 0px 1px 1px 0px;
+    }
+
+    /* Plotly Rangeslider */
+    .rangeslider-container{
+      border: solid 10px gray;
+    }
+
+    .rangeslider-handle-max, .rangeslider-handle-min{
+      height: 50px;
+      y: 8;
+      width: 8px;
+      fill: gainsboro;
+    }
+
+
+
+    /*
+     *
+     * Section-radiodiv
+     *
+     */
+
+     .radiodiv{
+       text-align: left;
+       display:flex;
+       padding: 10px 10px 10px 0px;
+     }
+
+     input[type="radio" i] {
+       margin-top: 3px;
+       margin-right: 3px;
+       margin-bottom: 0px;
+       margin-left: 0px;
+     }
+
+     .radio{
+       width: 33%;
+     }
+
+     .radio_text{
+       min-width: 150px;
+       text-align: left;
+       margin-top: 2px;
+     }
+
+     .clustering_type_select{
+       display: none;
+       width: 0px;
+     }
+
+     /*
+      *
+      * Section-clustertext
+      *
+      */
+
+      .clustertext{
+        display: flex;
+        text-align: left;
+      }
+
+      .clustertext2{
+        margin-top: 2px;
+        text-align: left;
+      }
+
+      .info_button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #info-box{
+        padding: 10px 5px 5px 5px;
+        min-height: 145px;
+        background-color: #8A0829;
+        color: #FFF;
+        margin-bottom: 10px;
+      }
+
+      #text_description{
+        margin-top: 10px;
+        font-style: italic;
+      }
+
+/*
+ *
+ * Aside
+ *
+ */
+
+aside{
+  width: 335px;
+}
+
+.aside-box{
+  height: 230px;
+}
+
+#categoryplot, #stratumplot{
+  height: 205px;
+  margin: auto;
+  font-weight: normal;
+}
+
+.heatmap{
+  height: 250px;
+}
+
+#heatmap{
+  height: 250px;
+}
+
+
+
+/*
+ *
+ * Plotly
+ *
+ */
+
+/* Remove floating modebar from plotly elements */
+.modebar{
+  display: none !important;
+}
+
+
+
+/*
+ *
+ * Leaflet-Legend
+ *
+ */
+
+
+.legend {
+  line-height: 18px;
+  color: #555;
+}
+.legend i {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+.info {
+   padding: 6px 8px;
+   font: 14px/16px Arial, Helvetica, sans-serif;
+   background: white;
+   background: rgba(255,255,255,0.8);
+   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+   border-radius: 5px;
+ }
+
+.info h4 {
+ margin: 0 0 5px;
+ color: #777;
+}
+
+.leaflet-bottom .leaflet-control {
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.leaflet-container{
+  background: #fff;
+}
+
+/* Leaflet Pointer */
+
+.leaflet-interactive {
+    cursor: default;
+}
