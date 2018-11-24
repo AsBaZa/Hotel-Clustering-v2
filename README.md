@@ -34,6 +34,8 @@ The file can be opened with the newest versions of web browsers such as [Firefox
 
 In the next section ([App description](#app-description)), the user can find more information about the app.
 
+**Note:** No internet connection is required to use it.
+
 ## App description
 
 The app is divided in 7 main areas:
