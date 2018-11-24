@@ -54,7 +54,7 @@ The app is divided in 7 main areas:
 ### 1. Navigation bar
 
 The navigation bar is divided in 4 parts and each of them is a selector that interacts with the charts. 
- - **Cluster**: we can show all the medoids of the clusters (the price time-series) or focus only on a specific cluster. If *'All'* option is selected, **TOTAL** statistics will be shown on the [Category plot](#5-category-plot), [Map plot](#6-map) and [Stratum plot](#7-stratum-plot), such as how many hotel/pensions are per each category and province. Otherwise, if a specific cluster is selected, the medoid of that cluster will be shown in the [Clustering plot](#2-clustering-plot) and the other 3 charts will show the **PERCENTAGE** of the establishments (broken down into categories and stratums) belonging to that cluster.
+ - **Cluster**: we can show all the groups (medoids of the clusters) or focus only on a specific one. If *'All'* option is selected, **TOTAL** statistics will be shown on the [Category plot](#5-category-plot), [Map plot](#6-map) and [Stratum plot](#7-stratum-plot), such as how many hotel/pensions are per each category and province. Otherwise, if a specific cluster is selected, the medoid of that cluster will be shown in the [Clustering plot](#2-clustering-plot) and the other 3 charts will show the **PERCENTAGE** of the establishments (broken down into categories and stratums) belonging to that cluster.
  - **Category, Province, Stratum**: these selectors are simply some filters that can be used to take more specific information.
 
 ### 2. Clustering plot
