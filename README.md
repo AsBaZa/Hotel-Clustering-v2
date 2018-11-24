@@ -61,7 +61,7 @@ The navigation bar is divided in 4 parts and each of them is a selector that int
 
 ### 2. Clustering plot
 
-In this chart, the medoids of the clustering are plotted. The elements of the project have been the price time-series of hotels, that is why the medoids are also time-series. In the initial screen, 7 time-series are shown but if we change the value of the **Cluster** selector of the [Navigation bar](#1-navigation-bar), a specific price time-series will be printed.
+In this chart, the medoids (the representative element of the group) of the clustering are plotted. The elements of the project have been the price time-series of hotels, that is why the medoids are also time-series. In the initial screen, 6 time-series are shown but if we change the value of the **Cluster** selector of the [Navigation bar](#1-navigation-bar), a specific price time-series will be printed.
 
 For this project, 3 different clusterings have been done or in other words, there have been 3 different criterias to group the establishments using their prices:
 
@@ -73,7 +73,7 @@ Further information about clustering methods used in this project can be found i
 
 ### 3. Clustering buttons
 
-These buttons change the clustering method used in this study and consequently, the medoids of the [Clustering plot](#clustering-plot) change when the user interacts with these buttons. (More information about clustering methods can be found in [Clustering methodology](#clustering-methodology)). 
+These buttons change the clustering method used in this study and consequently, the medoids (the representative elements of the group) of the [Clustering plot](#clustering-plot) change when the user interacts with these buttons. (More information about clustering methods can be found in [Clustering methodology](#clustering-methodology)). 
 
 Depending on the size of the screen, the appearence may change.
 
