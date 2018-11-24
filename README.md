@@ -18,6 +18,12 @@ This app can be used cloning this repository using `git` command:
 $ git clone https://github.com/AsBaZa/Hotel-Clustering-v2
 ```
 
+or downloading directly from `https://github.com/AsBaZa/Hotel-Clustering-v2`, clicking on the button
+
+<p align="center">
+ <img src="images/plotly_leaflet.png">
+</p>
+
 ## App description
 
 The app is divided in 7 main areas:
