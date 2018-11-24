@@ -12,11 +12,11 @@ These README.md is divided in few sections:
  
 ## How to use
 
-This app can be used cloning this repository using ´git´ command:
+This app can be used cloning this repository using `git` command:
 
-´´´
+```
 $ git clone https://github.com/AsBaZa/Hotel-Clustering-v2
-´´´
+```
 
 ## App description
 
