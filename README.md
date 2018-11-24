@@ -21,7 +21,7 @@ $ git clone https://github.com/AsBaZa/Hotel-Clustering-v2
 or downloading directly from `https://github.com/AsBaZa/Hotel-Clustering-v2`, clicking on the button
 
 <p align="center">
- <img src="images/plotly_leaflet.png">
+ <img src="images/readme-images/download_button.png">
 </p>
 
 ## App description
@@ -36,7 +36,7 @@ The app is divided in 7 main areas:
  1. [Stratum plot](#7-stratum-plot)
 
 <p align="center">
- <img src="images/app_description.png">
+ <img src="images/readme-images/app_description.png">
  <figcaption>The distribution and the appearance of the image above may change a little bit depending on the screen size phone, tablet or computer.</figcaption>
 </p>
 
@@ -66,7 +66,7 @@ These buttons change the clustering method used in this study and consequently, 
 Depending on the size of the screen, the appearence may change.
 
 <p align="center">
- <img src="images/clustering_buttons.png">
+ <img src="images/readme-images/clustering_buttons.png">
 </p>
 
 ### 4. Clustering information box
@@ -80,7 +80,7 @@ This is a bar chart that shows the distribution of the hotels by its category. I
 In the next example, it can be observed that more than the 40% of the H1 hotels (1 star hotels) of Araba (Ara) and Bizkaia (Biz) belong to the cluster that has been selected. In the same way, it can be observed that there is not any H5 hotel (5 star hotel) belonging to the selected cluster.
 
 <p align="center">
- <img src="images/category_plot.png">
+ <img src="images/readme-images/category_plot.png">
 </p>
 
 ### 6. Map
@@ -108,7 +108,7 @@ This is a bar chart that shows the distribution of the hotels by the stratum the
 In the next example, it can be observed that more than the 60% of the establishments belonging to Rest of Alava (Bes) are in the selected cluster (also more than the 60% of the establishments belonging to Inlan of Gipuzkoa (BarG) are in the selected cluster).
 
 <p align="center">
- <img src="images/stratum_plot.png">
+ <img src="images/readme-images/stratum_plot.png">
 </p>
 
 ## Clustering methodology
@@ -131,13 +131,13 @@ The main goal of this clustering is to show different price rates of the establi
 The method used in this clustering is the same as seen above in [Clustering with Absolute Prices](#clustering-with-absolute-prices). The difference is that instead of using absolute price time-series, those time-series have been normalized between 0 and 100 using the next *Min-Max* formula:
 
 <p align="center">
- <img src="images/equation1.gif">
+ <img src="images/readme-images/equation1.gif">
 </p>
 
 where
- - <img src="images/x.gif"> : original price time-series.
- - <img src="images/x_i.gif"> : price of a specific day.
- - <img src="images/z_i.gif"> : normalized price of a specific day.
+ - <img src="images/readme-images/x.gif"> : original price time-series.
+ - <img src="images/readme-images/x_i.gif"> : price of a specific day.
+ - <img src="images/readme-images/z_i.gif"> : normalized price of a specific day.
 
 If we focus on the formula above, there is a problem for the hotels or pensions with constant price, since we get an indetermination. For those establishments, many different constant prices have been tested: 0, 50, 100... and the best results were obtained giving the constant value 100 to those establishments.
 
@@ -148,7 +148,7 @@ The main goal of this clustering is to classify hotels and pensions depending on
 The volatility measure has been done using the next formula:
 
 <p align="center">
- <img src="images/volatility.gif">
+ <img src="images/readme-images/volatility.gif">
 </p>
 
 That formula is based in *close-to-close volatility estimator*, but instead of calculating the standard deviation, the mean is taken (Further information about different volatility measures can be found on the reference manual of [TTR](https://CRAN.R-project.org/package=TTR) library, volatility section).
@@ -160,5 +160,5 @@ The main goal of this clustering is to classify hotels and pensions depending on
 The libraries used in this app are mainly [Plotly](https://plot.ly/javascript/) (for the charts) and [Leaflet](https://leafletjs.com/) (for the map).
 
 <p align="center">
- <img src="images/plotly_leaflet.png">
+ <img src="images/readme-images/plotly_leaflet.png">
 </p>
