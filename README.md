@@ -5,9 +5,18 @@ This is a project of <a href="http://en.eustat.eus/indice.html">Eustat</a> with 
 120 requests have been done per each day and each hotel/pension. In other words, the price of the next 120 days has been collected daily and the unit of analysis has been the standard double room with bathroom, without breakfast and without VAT. Once the 120 requests were done, we took the median of those prices for the posterior analysis.
 
 These README.md is divided in few sections:
+ - [How to use](#how-to-use)
  - [App description](#app-description)
  - [Clustering methodology](#clustering-methodology)
  - [Libraries](#libraries)
+ 
+## How to use
+
+This app can be used cloning this repository using ´git´ command:
+
+´´´
+$ git clone https://github.com/AsBaZa/Hotel-Clustering-v2
+´´´
 
 ## App description
 
