@@ -32,6 +32,8 @@ Once the repository is downloaded, it can be opened clicking on the `index.html`
 
 The file can be opened with the newest versions of web browsers such as [Firefox](https://www.mozilla.org/), [Google Chrome](https://www.google.com/chrome/), [Opera](https://www.opera.com/), [Safari](https://www.apple.com/safari/) or [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge). However, the app is not compatible with older web browsers such as [Internet Explorer](https://www.microsoft.com/download/internet-explorer.aspx).
 
+In the next section ([App description](#app-description)), the user can find more information about the app.
+
 ## App description
 
 The app is divided in 7 main areas:
