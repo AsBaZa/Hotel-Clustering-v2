@@ -115,14 +115,20 @@ Those 2 plots show the distribution of the hotels by the stratum they belong to.
 
 In the next example, it can be observed that more than the 60% of the establishments belonging to Rest of Alava (Bes) are in the selected cluster (also more than the 60% of the establishments belonging to Inlan of Gipuzkoa (BarG) are in the selected cluster).
 
-### 7. Language
-
-This is a bar chart that shows the distribution of the hotels by the stratum they belong to (the 11 stratums are listed above in [Map](#6-map) subsection). If *'All'* is selected in the **Cluster** element of the [Navigation bar](#1-navigation-bar), the chart shows all the hotels and pensions (applying the filters of the [Navigation bar](#1-navigation-bar)). Otherwise, the app plots the percentage of the establishments that belongs to the selected cluster.
-
-In the next example, it can be observed that more than the 60% of the establishments belonging to Rest of Alava (Bes) are in the selected cluster (also more than the 60% of the establishments belonging to Inlan of Gipuzkoa (BarG) are in the selected cluster).
-
 <p align="center">
  <img src="images/readme-images/stratum_plot.png">
+</p>
+
+### 7. Language
+
+This bar changes the language of the app. The 3 available options are:
+
+ - English
+ - Euskera
+ - Castellano
+ 
+<p align="center">
+ <img src="images/readme-images/language_bar.png">
 </p>
 
 ## Clustering methodology
