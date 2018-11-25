@@ -83,7 +83,7 @@ Depending on the size of the screen, the appearence may change.
 
 ### 4. Clustering information box
 
-Here, the app will show information about the clusters.
+Here, the app shows information about the clusters.
 
 ### 5. Hotel distribution by category
 
