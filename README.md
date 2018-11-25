@@ -97,7 +97,7 @@ In the next example, it can be observed that more than the 40% of 1-star hotels 
 
 ### 6. Hotel distribution by stratum
 
-The map plots the Basque Autonomous Community and is divided in 11 different stratums:
+These 2 plots show the Basque Autonomous Community, divided in 11 different stratums:
 
  - Rest of Araba
  - Rioja Alavesa
@@ -111,7 +111,9 @@ The map plots the Basque Autonomous Community and is divided in 11 different str
  - Metropolitan Area of Donostia-San Sebastián
  - Donostia-San Sebastián
  
-Those stratums are the same that appear in the [Stratum plot](#7-stratum-plot) and basically, the map prints the same results as [Stratum plot](#7-stratum-plot). The difference between both charts is that one shows numerical results and the other one prints those results in a map.
+Those 2 plots show the distribution of the hotels by the stratum they belong to. If *'All'* is selected in the **Cluster** element of the [Navigation bar](#1-navigation-bar), the charts show all the hotels and pensions (applying the filters of the [Navigation bar](#1-navigation-bar)). Otherwise, the app plots the percentage of the establishments that belongs to the selected cluster.
+
+In the next example, it can be observed that more than the 60% of the establishments belonging to Rest of Alava (Bes) are in the selected cluster (also more than the 60% of the establishments belonging to Inlan of Gipuzkoa (BarG) are in the selected cluster).
 
 ### 7. Language
 
