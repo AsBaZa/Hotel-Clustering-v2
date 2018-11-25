@@ -45,7 +45,7 @@ The app is divided in 7 main areas:
  1. [Clustering information box](#4-clustering-information-box)
  1. [Hotel distribution by category](#5-hotel-distribution-by-category)
  1. [Hotel distribution by stratum](#6-hotel-distribution-by-stratum)
- 1. [Stratum plot](#7-stratum-plot)
+ 1. [Language](#7-language)
 
 <p align="center">
  <img src="images/readme-images/app_description.png">
@@ -113,7 +113,7 @@ The map plots the Basque Autonomous Community and is divided in 11 different str
  
 Those stratums are the same that appear in the [Stratum plot](#7-stratum-plot) and basically, the map prints the same results as [Stratum plot](#7-stratum-plot). The difference between both charts is that one shows numerical results and the other one prints those results in a map.
 
-### 7. Stratum plot
+### 7. Language
 
 This is a bar chart that shows the distribution of the hotels by the stratum they belong to (the 11 stratums are listed above in [Map](#6-map) subsection). If *'All'* is selected in the **Cluster** element of the [Navigation bar](#1-navigation-bar), the chart shows all the hotels and pensions (applying the filters of the [Navigation bar](#1-navigation-bar)). Otherwise, the app plots the percentage of the establishments that belongs to the selected cluster.
 
