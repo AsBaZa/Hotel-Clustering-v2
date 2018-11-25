@@ -61,14 +61,11 @@
   .clustering_type_select{
     display: flex;
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0px;
   }
 
   #clustering_type_selector{
     width: 170px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .radio_button{
@@ -95,6 +92,10 @@
     width: 46%;
     margin: auto;
   }
+
+  .clustering_type_select{
+    margin-left: 0px;
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -109,9 +110,5 @@
 
   .clustering_type_select{
     width: 100%;
-  }
-
-  #clustering_type_selector{
-    margin: auto;
   }
 }
