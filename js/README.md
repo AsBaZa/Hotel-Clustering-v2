@@ -15,10 +15,12 @@ The data of the app is located in this file.
 
 ## Language
 
-This file contain the text for 3 different languages.
+This folder contain the text for 3 different languages.
 
 ## Class
 
-
+In this file are the 4 different classes for the 4 different charts, 3 of them plotted using [Plotly](https://plot.ly/) and the other one using [Leaflet](https://leafletjs.com/). 
 
 ## Main
+
+This is the main file that contains all the `eventListener`s and actions of the app.
