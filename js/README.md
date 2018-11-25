@@ -9,10 +9,16 @@ The JavaScript Code is divided in few different sections:
  
 ## Data
 
-The data of the app is located in this file. There are files related to the characteristics of the hotels (category, stratum or clustering they belong to, among others.)
+The data of the app is located in this file. 
+ - The file `honESTCLUS.js` is related to the characteristics of the hotels such as category, stratum, province or clustering they belong to.
+ - The other 3 files contain the price time-series of the clusters.
 
 ## Language
 
+This file contain the text for 3 different languages.
+
 ## Class
+
+
 
 ## Main
