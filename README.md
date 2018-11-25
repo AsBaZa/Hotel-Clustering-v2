@@ -89,7 +89,7 @@ Here, the app shows information about the clusters.
 
 This is a bar chart that shows the distribution of the hotels by its category. If *'All'* is selected in the **Cluster** element of the [Navigation bar](#1-navigation-bar), the chart shows all the hotels and pensions (applying the filters of the [Navigation bar](#1-navigation-bar)). Otherwise, the app plots the percentage of the establishments that belongs to the selected cluster.
 
-In the next example, it can be observed that more than the 40% of the H1 hotels (1 star hotels) of Araba (Ara) and Bizkaia (Biz) belong to the cluster that has been selected. In the same way, it can be observed that there is not any H5 hotel (5 star hotel) belonging to the selected cluster.
+In the next example, it can be observed that more than the 40% of 1-star hotels of Araba (Ara) and Bizkaia (Biz) belong to the cluster that has been selected. In the same way, it can be observed that there is not any 5-star hotel belonging to the selected cluster.
 
 <p align="center">
  <img src="images/readme-images/category_plot.png">
