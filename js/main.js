@@ -49,16 +49,8 @@ document.getElementById("input_stratum").value = "denak";
     plot2.language = newLanguage;
     plot3.language = newLanguage;
 
-    Plotly.setPlotConfig({locale: newLanguage})
-
-    Plotly.relayout(plot.element,{
-        yaxis: {
-          title: newLanguage === "en" ? "Price €":
-                 newLanguage === "es" ? "Precio €":
-                 "Prezioa €"
-        }
-    });
-
+    plot.paint();
+    
     Plotly.relayout(plot2.element,{
         yaxis: {
           title: plot2.select1.value === "denak" ?

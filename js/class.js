@@ -179,9 +179,7 @@ class ClusterPlot extends PlotPlotly{
                  this.language === "es" ? "Precio €":
                  "Prezioa €",
           rangemode: "tozero",
-          autorange: true//,
-          // showline: true,
-          // mirror: true
+          autorange: true
         },
         xaxis: {
           rangeslider: {
@@ -194,7 +192,7 @@ class ClusterPlot extends PlotPlotly{
           l: 45,
           r: 20
         }
-      },{responsive: true}
+      },{locale: this.language, responsive: true}
     );
   }
 };
