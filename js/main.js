@@ -17,17 +17,19 @@ document.getElementById("input_stratum").value = "denak";
   ////////////
   //LANGUAGE//
   ////////////
-  function changeLanguage(lang) {
+  function changeLanguage(lang,selectedClus) {
     const elems = document.querySelectorAll('[data-tr]');
   	Array.from(elems).map(function(x){
-  		x.innerHTML = dict.hasOwnProperty(lang) ?
-  			dict[lang][x.getAttribute('data-tr')] :
-        x.getAttribute('data-tr');
+      x.getAttribute('data-tr') === "ClusterText" ?
+        document.getElementById("input_cluster").value === "denak" ?
+          x.innerHTML = dict[lang][selectedClus].text :
+          x.innerHTML = dict[lang][selectedClus].number[document.getElementById("input_cluster").value] :
+    		x.innerHTML = dict[lang][x.getAttribute('data-tr')];
     });
   }
 
   let language = "en";
-  changeLanguage(language);
+  changeLanguage(language,"CLUSTERABS");
   Plotly.setPlotConfig({locale: language})
 
 
@@ -44,13 +46,13 @@ document.getElementById("input_stratum").value = "denak";
 
   document.getElementById("input_language").addEventListener("change", function(){
     let newLanguage = document.getElementById("input_language").value;
-    changeLanguage(newLanguage);
+    changeLanguage(newLanguage,plot.selectedClus);
     plot.language = newLanguage;
     plot2.language = newLanguage;
     plot3.language = newLanguage;
 
     plot.paint();
-    
+
     Plotly.relayout(plot2.element,{
         yaxis: {
           title: plot2.select1.value === "denak" ?
@@ -99,9 +101,9 @@ document.getElementById("input_stratum").value = "denak";
       x.value === "CLUSTERNOR" ? plot.paint(dfNOR) : plot.paint(dfALD);
 
       //Change text from 'Clustering Information'
-      document.getElementById("type_text").innerHTML = dict[language][x.value].title;
+      document.getElementById("type_text").innerHTML = dict[plot.language][x.value].title;
       document.getElementById("select_text").innerHTML = plot.select1[0].innerHTML;
-      document.getElementById("text_description").innerHTML = dict[language][x.value].text;
+      document.getElementById("text_description").innerHTML = dict[plot.language][x.value].text;
 
       //Change 'clustering_type_selector', the select button that is
       //hidden in big screens.
@@ -135,11 +137,11 @@ document.getElementById("input_stratum").value = "denak";
 
       if(plot.select1.value > 0){
         document.getElementById("select_text").innerHTML = plot.select1.value;
-        document.getElementById("text_description").innerHTML = dict[language][plot.selectedClus].number[plot.select1.value];
+        document.getElementById("text_description").innerHTML = dict[plot.language][plot.selectedClus].number[plot.select1.value];
       }
       else{
         document.getElementById("select_text").innerHTML = plot.select1[0].innerHTML;
-        document.getElementById("text_description").innerHTML = dict[language][plot.selectedClus].text;
+        document.getElementById("text_description").innerHTML = dict[plot.language][plot.selectedClus].text;
       }
     });
   });
